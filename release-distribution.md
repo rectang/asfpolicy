@@ -20,3 +20,34 @@ Notice:    Licensed to the Apache Software Foundation (ASF) under one
 
 [TOC]
 
+----------------
+
+# Release Distribution Policy # {#policy}
+
+## Release Distribution Channels ## {#channels}
+
+## Release Distribution Directory ## {#dist-dir}
+
+## Release Content ## {#release-content}
+
+## Public Distribution ## {#public-distribution}
+
+## Distribution of Unreleased Materials ## {#unreleased}
+
+## Pre-upload Notification ## {#heads-up}
+
+## Cryptographic Signatures and Checksums ## {#sigs-and-sums}
+
+## Download Links ## {#download-links}
+
+## Release Archival ## {#archival}
+
+## Maven ## {#maven}
+
+## Policy Administration ## {#administration}
+
+----------------
+
+# Release Distribution FAQ # {#faq}
+
+TODO
