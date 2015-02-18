@@ -27,6 +27,44 @@ and the [design goals of this policy](mirrors).
 
 [TOC]
 
+----------------
+
+# Release Distribution Policy # {#policy}
+
+## Release content ### {#release-content}
+
+### Official releases ### {#official-releases}
+
+### Binary packages ### {#binary-packages}
+
+### Developer packages ### {#dev-packages}
+
+## Public distribution ## {#public-distribution}
+
+## Distribution of developer packages ## {#dev-distribution}
+
+## Release distribution area ## {#dist-area}
+
+### Pre-upload notification ### {#heads-up}
+
+## Release signing ### {#release-signing}
+
+### PGP Signatures ### {#pgp}
+
+### Checksums ### {#checksums}
+
+## Download links {#download-links}
+
+## Release archival ## {#archival}
+
+## Downstream distribution {#downstream}
+
+### Maven {#maven}
+
+## Policy Changes ## {#policy-changes}
+
+----------------
+
 # Release Questions # {#releases}
 
 ## Why Do We Need a Foundation-Wide Policy? ## {#why}
