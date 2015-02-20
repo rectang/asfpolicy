@@ -31,6 +31,21 @@ and the [design goals of this policy](mirrors).
 
 # Release Distribution Policy # {#policy}
 
+## Release Distribution Channels {#channels}
+
+The ASF's official channel for distribution of current Apache software
+releases to the general public is the Apache mirror network.
+
+The public may also obtain Apache software from any number of "downstream"
+channels which redistribute our releases in either original or derived form.
+The vast majority of such downstream channels operate independently of Apache.
+
+Apache Infrastructure maintains certain "developer" distribution channels
+which facilitate distribution of unreleased software within a development
+community.
+
+Finally, all historic Apache releases may be obtained from the Apache archive.
+
 ## Release content ### {#release-content}
 
 ### Official releases ### {#official-releases}
