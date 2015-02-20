@@ -31,6 +31,10 @@ and the [design goals of this policy](mirrors).
 
 # Release Distribution Policy # {#policy}
 
+This policy governs the distribution of Apache software releases
+through channels maintained by Apache Infrastructure.  It complements Apache
+Release Policy, which governs how to create releases.
+
 ## Release Distribution Channels {#channels}
 
 The ASF's official channel for distribution of current Apache software
