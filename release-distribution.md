@@ -50,6 +50,16 @@ Finally, all historic Apache releases may be obtained from
 
 ## Release Content ## {#release-content}
 
+The content of official Apache releases and the process by which valid
+releases are created is governed by Apache [Release
+Policy](http://www.apache.org/dev/release).
+
+Release Policy [specifies](http://www.apache.org/dev/release#what) that binary
+packages provided by third parties which meet certain criteria may be
+distributed alongside official source packages.  Such packages are sometimes
+referred to as "convenience binaries" to distinguish them from other binary
+packages.
+
 ## Public Distribution ## {#public-distribution}
 
 ## Distribution of Unreleased Materials ## {#unreleased}
