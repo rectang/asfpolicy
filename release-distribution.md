@@ -24,6 +24,11 @@ Notice:    Licensed to the Apache Software Foundation (ASF) under one
 
 # Release Distribution Policy # {#policy}
 
+This policy governs the distribution of Apache software releases
+through channels maintained by Apache Infrastructure.  It complements Apache
+[Release Policy](http://www.apache.org/dev/release), which governs how to
+create releases.
+
 ## Release Distribution Channels ## {#channels}
 
 The ASF's official channel for distribution of current Apache software
