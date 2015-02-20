@@ -24,6 +24,22 @@ Notice:    Licensed to the Apache Software Foundation (ASF) under one
 
 # Release Distribution Policy # {#policy}
 
+## Release Distribution Channels ## {#channels}
+
+The ASF's official channel for distribution of current Apache software
+releases to the general public is `www.apache.org/dist`, augmented by the
+Apache mirror network.
+
+The public may also obtain Apache software from any number of "downstream"
+channels which redistribute our releases in either original or derived form.
+The vast majority of such downstream channels operate independently of Apache.
+
+Apache Infrastructure maintains certain "developer" distribution channels
+which facilitate distribution of unreleased software to consenting members of
+a development community.
+
+Finally, all historic Apache releases may be obtained from archive.apache.org.
+
 ## Release content ### {#release-content}
 
 ### Official releases ### {#official-releases}
