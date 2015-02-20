@@ -54,7 +54,15 @@ Finally, all historic Apache releases may be obtained from the Apache archive.
 
 ### Official releases ### {#official-releases}
 
+The content of official Apache releases and the process by which they are
+created is governed by the Apache Release Policy maintained by Legal Affairs.
+
 ### Binary packages ### {#binary-packages}
+
+Release Policy specifies that binary packages provided by third parties which
+meet certain criteria may be distributed alongside official source packages.
+Such packages are called "convenience binaries" to distinguish them from other
+binary packages.
 
 ### Developer packages ### {#dev-packages}
 
