@@ -78,13 +78,6 @@ The content of official Apache releases and the process by which valid
 releases are created is governed by Apache [Release
 Policy](http://www.apache.org/dev/release).
 
-A release starts when the project community agrees to make a release.
-However, no release manager can make a valid release unless the community
-has taken the necessary steps to prepare in advance. The source code and
-build process must comply with the legal and intellectual property
-requirements for a [valid](#valid) release, and the project must have the
-infrastructure in place to correctly [sign](#sign) the release artifacts.
-
 Release Policy [specifies](http://www.apache.org/dev/release#what) that binary
 packages provided by third parties which meet certain criteria may be
 distributed alongside official source packages.  Such packages are sometimes
@@ -93,27 +86,21 @@ packages.
 
 ## Public Distribution ## {#public-distribution}
 
-The Apache infrastructure *must* be the primary source for all artifacts
-officially released by the ASF.
+All official releases MUST be uploaded to the official distribution channel,
+`www.apache.org/dist`.
 
-The Apache Infrastructure team maintains the Apache release distribution
-infrastructure. This infrastructure has two parts: the mirrored directories
-on `www.apache.org` and the Maven repository on `repository.apache.org`.
+Content suitable for the official distribution channel includes:
 
-ASF releases typically contain additional material together with the source
-package. This material may include documentation concerning the release but
-must contain LICENSE and NOTICE files. As mentioned above, these artifacts
-must be signed by a committer with a detached signature if they are to be
-placed in the project's distribution directory.
+*   Official releases
+*   "Convenience binaries"
+*   Cryptographic signatures and checksums
+*   The [KEYS](#sigs-and-sums) file
+*   `README`, `CHANGES` and similar documents describing distributed
+    content
 
-Again, these artifacts may be distributed only if they contain LICENSE and
-NOTICE files. For example, the Java artifact format is based on a
-compressed directory structure and those projects wishing to distribute
-jars must place LICENSE and NOTICE files in the META-INF directory within
-the jar.
-
-The KEYS file is a plain text file containing the public key signatures of
-the release managers (and optionally other committers) for the project.
+If an Apache PMC wishes to publish additional materials through the official
+distribution channel and there is any question about the suitability of said
+materials, the PMC MUST consult with the Board.
 
 ## Distribution of Unreleased Materials ## {#unreleased}
 
