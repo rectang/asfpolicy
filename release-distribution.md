@@ -70,6 +70,9 @@ packages.
 
 ### Developer packages ### {#dev-packages}
 
+Developer packages contain unreleased code, in either original or derived
+form.
+
 ## Public distribution ## {#public-distribution}
 
 The Apache infrastructure *must* be the primary source for all artifacts
