@@ -86,84 +86,14 @@ MUST consult with the Board.
 
 ## Distribution of developer packages ## {#dev-distribution}
 
-In the traditional open source development methodology practiced
-at volunteer liability-limiting organizations like Apache, it is necessary to draw
-clear distinctions between public resources that represent works "in-progress"
-and works suitable for consumption by the public at large.
-The purpose of a clear line is to inform our legal strategy of providing
-protection for formal participants involved in producing releases, as defined
-in the next section.  In-progress assets are viewed as controlled distributions
-designed for self-identifying participants in project development, who are
-primarily following the project's development lists.  Uncontrolled distributions,
-aka releases, are what this policy document is designed to cover.
+Developer packages MUST NOT be distributed through `www.apache.org/dist`.
 
-Were we to avoid drawing this distinction, and instead encouraged users to interact
-directly with source control or nightly builds, it would be very difficult for
-the organization to offer legal protection to Apache committers and PMC members
-who have only exercised their own judgement in making software modifications
-without the benefit of an **authorized business decision** approving of the distribution
-of those artifacts as-is to the public at large.
+Developer packages MUST NOT be advertised to anyone outside of the project
+development community.
 
-Releases are, by definition, anything that is published beyond the group
-that owns it. In our case, that means any publication outside the group of
-people on the product dev list. If the general public is being instructed
-to download a package, then that package has been released. Each PMC must
-obey the ASF requirements on [approving any release](#approving-a-release). 
-How you label the package is a secondary issue, described below.
-
-During the process of developing software and preparing a release, various
-packages are made available to the developer community for testing
-purposes. **Do not include any links on the project website that might
-encourage non-developers to download and use nightly builds, snapshots,
-release candidates, or any other similar package.** The only people who are
-supposed to know about such packages are the people following the dev list
-(or searching its archives) and thus aware of the conditions placed on the
-package. If you find that the general public are downloading such test
-packages, then remove them.
-
-Under no circumstances are unapproved builds a substitute for releases. If
-this policy seems inconvenient, then release more often. Proper release
-management is a key aspect of Apache software development.
-
-- **Test Packages** are not Apache releases. All releases require due
-process and official approval. Test packages are for testing ongoing
-development and should only be discussed on the project development lists.
-
-- **Nightly Builds** are simply built from the Subversion trunk,
-usually once a day. These packages are intended for regular testing of
-the build process and to give automated testers a common build for
-regression testing. They are not intended for use by the general
-public.
-
-- **Release Candidates** are packages that have been proposed for
-approval as a release but have not yet been approved by the project.
-These packages are intended for developers (and users who follow the
-development discussions) to test and report back to the project
-regarding their opinions on the package quality compared to prior
-releases. Many release candidates are possible prior to a release
-approval. Users that are not interested in development testing should
-wait until a release is formally approved.
-
-- **Releases** are packages that have been approved for general public
-release, with varying degrees of caveat regarding their perceived quality
-or potential for change. Releases that are intended for everyday usage by
-non-developers are usually referred to as "stable" or "general availability
-(GA)" releases. Releases that are believed to be usable by testers and
-developers outside the project, but perhaps not yet stable in terms of
-features or functionality, are usually referred to as "beta" or "unstable".
-Releases that only represent a project milestone and are intended only for
-bleeding-edge developers working outside the project are called "alpha".
-
-Test packages are for use by consenting developers and interested community
-members only, so they should not be hosted or linked on pages intended for end
-users.  They should not be mirrored; only blessed GA releases should be
-mirrored.
-
-Projects typically use `http://people.apache.org/~${RM}/**` or the newer
-[`/dev` tree of the `dist` repository](https://dist.apache.org/repos/dist/dev)
-or the staging features of repository.apache.org
-to host release candidates posted for developer testing/voting (prior to being,
-potentially, formally blessed as a GA release).
+Developer packages MAY be distributed to consenting members of a development
+community through development channels such as
+`dist.apache.org/repos/dist/dev`, `builds.apache.org` and so on.
 
 ## Release distribution area ## {#dist-area}
 
