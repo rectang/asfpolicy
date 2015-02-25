@@ -423,6 +423,9 @@ repository.
 
 ## Policy Administration ## {#administration}
 
+Changes to Release Distribution Policy MUST be approved by the V.P. of Apache
+Infrastructure.
+
 ----------------
 
 # Release Distribution FAQ # {#faq}
