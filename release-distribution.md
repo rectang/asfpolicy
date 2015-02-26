@@ -101,17 +101,10 @@ Developer packages MAY be distributed to consenting members of a development
 community through development channels such as
 `dist.apache.org/repos/dist/dev`, `builds.apache.org` and so on.
 
-### Pre-upload notification ### {#heads-up}
+## Pre-upload notification ## {#heads-up}
 
-Most projects can just distribute a release as described in the previous two
-questions.  However, releases that are likely to strain the mirroring and
-download resources **must** be coordinated with infrastructure.
-
-Releases of more than 1GB of artifacts require a heads-up to Infrastructure in
-advance.
-
-Specific exemptions from other dist policies (such as what may or must or must
-not be distributed via the mirrors) also need to be coordinated with Infrastructure.
+Releases of more than 1GB of artifacts MUST be coordinated with Infrastructure
+in advance, in order to mitigate strain on mirroring and download resources.
 
 ## Release signing ### {#release-signing}
 
