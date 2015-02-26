@@ -249,38 +249,13 @@ download page.
 
 ## Release archival ## {#archival}
 
-All releases must be archived on <http://archive.apache.org/dist/>.
+All releases MUST be archived on `archive.apache.org`.  This generally happens
+via an automated process which adds releases to the archive about a day after
+they first appear on `www.apache.org/dist`.
 
-An automated process adds releases to the archive about a day after
-they first appear on to <http://www.apache.org/dist/>.
-Once a release
-is placed under `http://www.apache.org/dist/` it will automatically be copied over
-to `http://archive.apache.org/dist/` and held there permanently, even after it is deleted
-from `http://www.apache.org/dist/`.
-
-If you have (legacy?) releases that never got archived, 
-ask infra to copy them to `http://archive.apache.org/dist/`.
-
-`/www.apache.org/dist` should contain *the latest release in each branch 
-that is currently under development*. When development ceases on a version 
-branch, releases of that branch should be removed from `/dist`.
-
-(If the project uses svnpubsub, 
-this is done by deleting the artifacts from 
-`https://dist.apache.org/repos/dist/release/<TLP name>/`.)
-
-For example, if Apache Foo 1.2.x is a newer release in the same line as 
-Foo 1.1.a, then 1.1.a should be removed when 1.2.x is released.
-Note that all releases are automatically archived,
-see [How Is An Old Release Moved To The Archives](#how-to-archive)
-
-If Apache Foo 1.2 is a new branch, and development continues on 1.1 in 
-parallel, then it is acceptable to serve both 1.1.a and 1.2.x from `/dist`.
-
-`/www.apache.org/dist` is automatically archived. Therefore, a copy of an
-official release will already exist in the archives. To move a release to
-the archives, just delete the copy in `/www.apache.org/dist`. Remember to
-update any links from the download page.
+Each project's [distribution directory](#dist-dir) SHOULD contain the latest
+release in each branch that is currently under development.  When development
+ceases on a version branch, releases of that branch SHOULD be removed.
 
 ## Downstream distribution {#downstream}
 
