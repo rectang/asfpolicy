@@ -240,19 +240,11 @@ ceases on a version branch, releases of that branch SHOULD be removed.
 
 ## Maven ## {#maven}
 
-In addition to the distribution directory, project that use Maven or
-a related build tool sometimes place their
-releases on `repository.apache.org` beside some convenience binaries. 
-The distribution directory is required, 
-while the repository system is an optional convenience.
-
-Apache operates a repository manager at https://repository.apache.org/. It can
-be used by Apache projects for deploying snapshots, releases, or both. See the
-Publishing Maven Releases guide for more details.
-
-The *snapshot* repositories are for interim *snapshot* releases and the
-*ibiblio* repositories are for releasing via rsync to the 'central' Maven
-repository.
+Infrastructure operates an Apache Maven repository manager at
+[repository.apache.org](https://repository.apache.org/).  Projects MAY
+use the repository system as a downstream channel to redistribute released
+materials, and MAY use it to distribute SNAPSHOTs containing unreleased
+materials to consenting members of the project development community.
 
 ## Policy Administration ## {#administration}
 
