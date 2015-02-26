@@ -247,10 +247,6 @@ reference the main Apache web site and *should* use https:// (SSL).
 - Old releases *should* be [archived](release.html#how-to-archive) and may
 be linked from the download page.
 
-- Artifacts which are not full official releases (for example, milestones,
-betas and alphas) may be linked from the download page. Links to these
-artifacts should be removed in a timely fashion.
-
 ## Release archival ## {#archival}
 
 All releases must be archived on <http://archive.apache.org/dist/>.
