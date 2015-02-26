@@ -225,15 +225,15 @@ The website documentation for any Apache product MUST provide public download
 links where current official source releases and accompanying cryptographic
 files may be obtained.
 
-- All links to the mirrored distribution artifacts **must not** reference
-the main Apache web site. They *should* use the standard mechanisms to
-distribute the load between the mirrors.
+All links to mirrored distribution artifacts MUST NOT reference the main
+Apache web site. They SHOULD use the standard mechanisms to distribute the
+load between the mirrors.
 
-- All links to checksums, detached signatures and public keys **must**
-reference the main Apache web site and *should* use https:// (SSL).
+All links to checksums, detached signatures and public keys MUST
+reference the main Apache web site and SHOULD use `https://` (SSL).
 
-- Old releases *should* be [archived](release.html#how-to-archive) and may
-be linked from the download page.
+Old releases SHOULD be [archived](#archival) and MAY be linked from public
+download pages.
 
 ## Release Archival ## {#archival}
 
