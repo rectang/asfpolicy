@@ -45,6 +45,12 @@ a development community.
 
 Finally, all historic Apache releases may be obtained from archive.apache.org.
 
+## Release distribution directory ## {#dist-dir}
+
+Every top-level project at Apache has its own public distribution directory,
+which is a subdirectory of `www.apache.org/dist/`.  The PMC is responsible for
+all artifacts within their distribution directory.
+
 ## Release content ### {#release-content}
 
 ### Official releases ### {#official-releases}
@@ -94,32 +100,6 @@ development community.
 Developer packages MAY be distributed to consenting members of a development
 community through development channels such as
 `dist.apache.org/repos/dist/dev`, `builds.apache.org` and so on.
-
-## Release distribution area ## {#dist-area}
-
-Note that the PMC is responsible for all artifacts in their distribution
-directory, which is a subdirectory of `www.apache.org/dist/` ; and all
-artifacts placed in their directory must be signed by a committer,
-preferably by a PMC member.
-
-By committing your release tarballs to the appropriate subdirectory (i.e. TLP name) of the
-[`https://dist.apache.org/repos/dist/release/`](https://dist.apache.org/repos/dist/release/)
-repository.  [`svnpubsub`](infrastructure) will push the files to [the master
-mirror site](https://www.apache.org/dist/) immediately.  The 24-hour wait for
-mirrors is still required though (as [mirrors use an 1/N-daily
-rsync](../info/how-to-mirror) to catch up with the `dist/` tree).
-
-The repository directory
-`https://dist.apache.org/repos/dist/release/<TLP name>/`
-is for official releases only, i.e. archives (+ sigs, hashes) that have been approved
-by the PMC.
-
-There is also a development area under
-`https://dist.apache.org/repos/dist/dev/<TLP name>/`
-which can be used for development releases.
-For example snapshots and release candidates can be stored here.  One important item to note, 
-is that this directory does not get published to the mirrors via svnpubsub.  It is intended to 
-act as a staging location in preparation for the release to become official.
 
 ### Pre-upload notification ### {#heads-up}
 
