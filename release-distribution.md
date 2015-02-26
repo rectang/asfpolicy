@@ -221,21 +221,9 @@ SHA512 is [recommended](#sha1).
 
 ## Download Links ## {#download-links}
 
-Current releases must be served from the ASF mirroring system by placing them under
-`http://www.apache.org/dist/`.  (How to upload releases to the `dist/`
-tree is [explained](#upload-scp) [below](#upload-ci).) 
-
-Project download
-pages must link to the mirrors and not to the main Apache Web site; see
-[instructions for creating download pages](release-download-pages) for
-fuller details. 
-The website documentation for the software must contain a link to the download page for the source.
-
-Project websites (`http://{project}.apache.org`),
-VMs (`http://{project}.zones.apache.org` and `http://{project}-vm.apache.org`),
-and source control repositories (`svn.apache.org` and Git repositories)
-may not be used to distribute releases --- that is, releases should not be
-downloaded from them.
+The website documentation for any Apache product MUST provide public download
+links where current official source releases and accompanying cryptographic
+files may be obtained.
 
 - All links to the mirrored distribution artifacts **must not** reference
 the main Apache web site. They *should* use the standard mechanisms to
@@ -250,11 +238,6 @@ be linked from the download page.
 - Artifacts which are not full official releases (for example, milestones,
 betas and alphas) may be linked from the download page. Links to these
 artifacts should be removed in a timely fashion.
-
-Links to the checksum and signature for the artifact should be given next
-to the download link. It is important that users check the sum and verify
-the signature so these links should be close and clear. **Note:** these
-documents *must not* be mirrored.
 
 ## Release Archival ## {#archival}
 
