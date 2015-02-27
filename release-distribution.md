@@ -51,25 +51,19 @@ Every top-level project at Apache has its own public distribution directory,
 which is a subdirectory of `www.apache.org/dist/`.  The PMC is responsible for
 all artifacts within their distribution directory.
 
-## Release content ### {#release-content}
+## Release content ## {#release-content}
 
-### Official releases ### {#official-releases}
-
-The content of official Apache releases and the process by which valid
+The content of _official releases_ and the process by which valid
 releases are created is governed by Apache [Release
 Policy](http://www.apache.org/dev/release).
-
-### Binary packages ### {#binary-packages}
 
 Release Policy [specifies](http://www.apache.org/dev/release#what) that binary
 packages provided by third parties which meet certain criteria may be
 distributed alongside official source packages.  Such packages are sometimes
-referred to as "convenience binaries" to distinguish them from other binary
+referred to as _"convenience binaries"_ to distinguish them from other binary
 packages.
 
-### Developer packages ### {#dev-packages}
-
-Developer packages contain unreleased code, in either original or derived
+_Developer packages_ contain unreleased code, in either original or derived
 form.
 
 ## Public distribution ## {#public-distribution}
