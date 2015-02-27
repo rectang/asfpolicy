@@ -100,117 +100,33 @@ in advance, in order to mitigate strain on mirroring and download resources.
 
 ## Cryptographic Signatures and Checksums ## {#sigs-and-sums}
 
-Every artifact distributed by the Apache Software Foundation  *must* be
-accompanied by one file containing an [OpenPGP
-compatible ASCII armored detached signature](#openpgp-ascii-detach-sig) and
-another file containing an [MD5 checksum](#md5). The names of these files
-*must* be formed by adding to the name of the artifact the following
-suffixes:
+Every artifact distributed to the public through Apache channels MUST be
+accompanied by one file containing an [OpenPGP compatible ASCII armored
+detached signature](release-signing#openpgp-ascii-detach-sig) and another file
+containing an [MD5 checksum](release-signing#md5). The names of these files
+MUST be formed by adding to the name of the artifact the following suffixes:
 
-- the signature by suffixing `.asc` 
+*   the signature by suffixing `.asc`
+*   the checksum by suffixing `.md5`
 
-- the checksum by suffixing `.md5` 
+An [SHA](release-signing#sha-checksum) checksum SHOULD also be created and
+MUST be suffixed `.sha`.  The checksum SHOULD be generated using `SHA512`.
 
-An [SHA](#sha-checksum) checksum *should* also be created and *must* be
-suffixed `.sha`.
+Projects MUST publish a "[KEYS](#release-signing#keys-policy)" file in their
+distribution directory which contains all public keys used to sign artifacts.
 
-Release managers *must not* store private keys used to sign Apache releases
-on ASF hardware.
+Signing keys used at Apache MUST be published in the KEYS file and SHOULD be
+made available through the global [public
+keyserver](release-signing#keyserver) network.  Signing keys SHOULD be linked
+into a strong [web of trust](release-signing#web-of-trust).
 
-The private key *must not* be store on any ASF machine. So, signatures
-*must not* be created on ASF machines.
+Keys used to sign new artifacts MUST be RSA and at least 2048 bit.  Any new
+keys SHOULD be 4096 bit RSA.
 
-Sensitive operations using a private key *must not* be executed on ASF
-hardware.
+Private keys MUST NOT be stored on any ASF machine. So, signatures
+MUST NOT be created on ASF machines.
 
-The files that make up an Apache release are **always** accompanied by
-cryptographic signatures.
-
-It is vital that hash, signature and KEYS files are only downloaded from ASF hosts.
-So the following files are excluded from synchronisation:
-
-*.md5 *.MD5 *.sha1 *.sha *.sha256 *.sha512 *.asc *.sig KEYS KEYS.txt MD5SUM SHA*SUM
-
-MD5SUM and SHA*SUM must look like the output of md5sum(1): lines containing
-a checksum, followed by a filename ; use only plain filenames (no slashes).
-
-Do not use any other file names for such files.
-
-The source package must be
-[cryptographically signed](/dev/release-signing.html) by the Release
-Manager with a detached signature; and that package together with its
-signature must be tested prior to voting +1 for release. Folks who vote +1
-for release may offer their own cryptographic signature to be concatenated
-with the detached signature file (at the Release Manager's discretion)
-prior to release.
-
-Now that there is doubt about the medium term security of [SHA-1](#sha1) ,
-the DSA keys and 1024 bit RSA keys (which depend on this algorithm) should
-be avoided for new keys. It is uncertain whether 2048 bit RSA keys will be
-strong enough to remain secure until [SHA3](#sha3) (and the next generation
-of standards) arrives. It is therefore recommended that new keys should be
-at least 4096 bit RSA (the longest widely supported key length).
-
-Keys used at Apache should be available through the global [public
-keyserver](release-signing.html#keyserver) network. 
-
-Projects maintain [KEYS](release-signing.html#keys-policy) files containing
-the public keys used to sign Apache releases. These documents need not be
-updated immediately, but they **MUST** be updated with an export before any
-release is published using the new key.
-
-It is vital that Apache code signing keys are linked into a strong [web of
-trust](release-signing.html#web-of-trust). This allows independent
-verification of the fidelity of Apache releases by anyone strongly linked
-to this web. In particular, this enables to two important groups to
-independently verify releases:
-
-- The Apache Infrastructure Team
-- Downstream packagers
-
-The Apache web of trust is reasonably well connected to the wider open
-source web of trust. So though every opportunity should be taken to link
-into wider networks the most important action needs to be to plan to
-exchange signatures with other Apache committers.
-
-If your key has been compromised then you **MUST NOT** transition but
-[revoke](#revoke-key) the old key and replace with a new one immediately.
-**DO NOT** use a transition period.
-
-If your key has been compromised, you **MUST NOT** use a transition period.
-You should immediately [revoke](release-signing.html#revoke-key) the
-compromised key and [create a new one](openpgp.html#generate-key). All [web
-of trust](release-signing.html#web-of-trust) links signed by the old key
-should be regarded as suspect. A completely new set of links **MUST** be
-re-established by meeting [in
-person](release-signing.html#key-signing-party).
-
-All web of
-trust links signed by the old key should be regarded as suspect. A completely
-new set of links MUST be re-established by meeting in person.
-
-- Committers with a DSA key or an RSA key of length less than 2048 bits
-should generate a new key for signing releases. The original key does not
-need to be revoked yet. Follow this [guide](key-transition.html).
-
-- Committers with RSA keys of length 2048 or more do not need to generate a
-new key yet. They should reconfigure their client to avoid the weakness by
-following these [instructions](openpgp.html#sha1) and wait for the next
-major OpenPGP revision.
-
-Signatures should be [ASCII armored and
-detached](#openpgp-ascii-detach-sig).
-
-Your [public key](#public-private) should be [exported](#export) and the
-result appended to the appropriate<code> [KEYS](#keys-policy)
-</code>file(s).
-
-Please note that further use of `SHA-1` should be [avoided](#sha1).
-
-`SHA256` and `SHA512` use the same `SHA` algorithm family with longer hash
-lengths (256 and 512 bits respectively). These longer variations are less
-vulnerable to the weaknesses found in the algorithm family than `SHA1`.
-SHA512 is [recommended](#sha1).
+Compromised signing keys MUST be revoked and replaced immediately.
 
 ## Download Links ## {#download-links}
 
